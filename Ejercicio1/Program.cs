@@ -10,7 +10,7 @@ namespace Ejercicio1
     {
         static void Main(string[] args)
         {
-            enemigo Enemigo = new enemigo();
+            Enemigo enemigo = new Enemigo();
 
         }
     }

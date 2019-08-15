@@ -6,45 +6,38 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1
 {
-    class enemigo
+    class Enemigo
     {
-        public int posX { get; set; }
-        public int posY { get; set; }
-        public bool dis { get; set; }
-        public bool exp { get; set; }
-
+        public int X { get; set; }
+        public int Y { get; set; }
         private int _pun;
-        public int pun
+        public int Pun
         {
             get
             {
                 return _pun;
             }
-
             set
             {
-                if (value < 100)
+                if(value >= 100)
                 {
                     _pun = value;
                 }
                 else
                 {
-                    throw new Exception("Este numero no puede ser menor a 100");
+                    throw new Exception("El valor tiene que ser mayor a 100");
                 }
             }
         }
-
-        public movimiento()
+        public void mover()
         {
 
         }
-
-        public disparo()
+        public void disparar()
         {
 
         }
-
-        public explotar()
+        public void explotar()
         {
 
         }
